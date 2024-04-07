@@ -1,6 +1,9 @@
 import re
 
 def extract_text(text):
+    """
+     a function that extracts text from a string
+    """
 
     pattern = r'\s*\|(.*?)\s*-'
     match = re.search(pattern,text)

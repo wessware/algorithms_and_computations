@@ -1,5 +1,9 @@
 def palindrome(s, startIndex, endIndex, subs):
 
+    """"
+    a function that checks if a string is a palindrome
+    """
+
     result = ""
     for i in range(startIndex):
         if _isPalindrome(s[startIndex[i]:endIndex[i]], subs[i]):

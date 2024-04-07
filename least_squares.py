@@ -3,7 +3,7 @@ from scipy.optimize import minimize
 
 def least_squares(A, b, constraints):
     """
-    
+        a function that uses the least squares method to find the root of a function
     
     """
     def objective(x):

@@ -46,4 +46,19 @@ class DoublyLinkedList:
             self.head = new_node
         self.count += 1
         print("Employee info inserted at the front!")
-        
+    
+    def delete_end(self):
+        if self.head is None:
+            print("Doubly linked list has employee info to delete!")
+        elif self.head == self.tail:
+            self.head = None
+            self.tail = None
+            self.count -= 1
+            print("Employee info deleted from the end!")
+        else:
+            self.tail = self.tail.prev
+            self.tail.next = None
+            self.count -= 1
+            print("Employee info deleted from the end!")
+
+            

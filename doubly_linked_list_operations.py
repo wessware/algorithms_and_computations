@@ -92,3 +92,34 @@ class DoublyLinkedList:
                 current = current.next
     def nodes_sum(self):
         print("This DLL has: " + self.count + " nodes")
+
+dll = DoublyLinkedList()
+
+while True:
+    print("-------DLL Display------")
+    print("OP1: Create a DLL of n employees with end insertion")
+    print("OP2: Display DLL and count the number of nodes")
+    print("OP3: Insertion at end operation")
+    print("OP4: Insertion at front operation")
+    print("OP5: Deletion at end operation")
+    print("OP6: Deletion at front operation")
+    print("OP7: DLL as double-end queue operation")
+    print("OP8: Exit program")
+    print("--------END----------")
+
+    choice = input("Choose and operation from the list: ")
+
+    if choice == "OP1":
+        n = int(input("Provide the number of employees: "))
+        for _ in range(n):
+            ssn = input("SSN number: ")
+            name = input("Employee name: ")
+            dept = input("Employee department: ")
+            designation = input("Employee designation: ")
+            sal = input("Employee salary: ")
+            phno = input("Employee phone number: ")
+
+            emp = Employee(ssn, name, dept, designation, sal, phno)
+            dll.insert_at_end(emp)
+        dll.dll_display()
+        dll.nodes_sum()

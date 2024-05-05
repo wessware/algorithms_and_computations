@@ -128,7 +128,7 @@ while True:
         dll.dll_display()
         dll.nodes_sum()
 
-    if choice == "OP3":
+    elif choice == "OP3":
         ssn = input("SSN Number: ")
         name = input("Employee name: ")
         dept = input("Employee department: ")
@@ -138,5 +138,18 @@ while True:
 
         employee = Employee(ssn, name, dept, designation, sal, phno)
         dll.insert_at_end(employee)
+        dll.dll_display()
+        dll.nodes_sum()
+
+    elif choice == "OP4":
+        ssn = input("SSN Number: ")
+        name = input("Enter employee number: ")
+        dept = input("Employee department" )
+        designation = input("Employee designation: ")
+        sal = float(input("Enter employee salary: "))
+        phno = input("Enter employee phone number: ")
+
+        employee = Employee(ssn, name, dept, designation, sal, phno)
+        dll.insert_at_front(employee)
         dll.dll_display()
         dll.nodes_sum()

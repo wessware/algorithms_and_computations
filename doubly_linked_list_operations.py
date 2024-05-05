@@ -73,4 +73,22 @@ class DoublyLinkedList:
             self.head.prev = None
             self.count -= 1
             print("Employee info deleted from front!")
-            
+
+    def dll_display(self):
+        if self.head is None:
+            print("This DLL has not data!")
+        else:
+            current = self.head
+            print("Doubly Linked List displaying!")
+
+            while current:
+                print("SSN: ", current.employee.ssn)
+                print("NameL: ", current.employee.name)
+                print("Department: ", current.employee.dept)
+                print("Designation: ", current.employee.designation)
+                print("Salary: ", current.employee.sal)
+                print("Phone Number: ", current.employee.phno)
+                print("------------")
+                current = current.next
+    def nodes_sum(self):
+        print("This DLL has: " + self.count + " nodes")

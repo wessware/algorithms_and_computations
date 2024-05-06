@@ -153,3 +153,75 @@ while True:
         dll.insert_at_front(employee)
         dll.dll_display()
         dll.nodes_sum()
+
+    elif choice == "OP5":
+        dll.delete_at_end()
+        dll.dll_display()
+        dll.nodes_sum()
+
+    elif choice == "OP6":
+        dll.delete_from_front()
+        dll.dll_display()
+        dll.nodes_sum()
+
+    elif choice == "OP7":
+        while True:
+            print("------Implementation as Double-Ended Queue")
+            print("OP1_1: Insertion at end operation")
+            print("OP2_2: Insert at front operation")
+            print("OP3_3: Deletion at end operation")
+            print("OP4_4: Deletion at front operation")
+            print("OP5_5: Return to main application")
+            print("--------END----------")
+
+            sec_choice = input("Select a DE-Queue operation: ")
+
+            if sec_choice == "OP1_1":
+                ssn = input("Enter employee ssn: ")
+                name = input("Emplyee name: ")
+                dept = input("Employee department: ")
+                sal = float(input("Employee salary: "))
+                designation = input("Employee designation: ")
+                phno = input("Employee phone number: ")
+
+                employee = Employee(ssn, name, dept, designation, sal, phno)
+                dll.insert_at_end(employee)
+                dll.dll_display()
+                dll.nodes_sum()
+
+            elif sec_choice == "OP2_2":
+                ssn = input("Employee SSN: ")
+                name = input("Employee name: ")
+                dept = input("Employee department: ")
+                designation = input("Employee designation: ")
+                sal = float(input("Employee salary: "))
+                phno = input("Employee phone number: ")
+
+                employee = Employee(ssn, name, dept, designation, sal, phno)
+                dll.insert_at_front(employee)
+                dll.dll_display()
+                dll.nodes_sum()
+
+            elif sec_choice == "OP3_3":
+                dll.delete_at_end()
+                dll.dll_display()
+                dll.nodes_sum()
+
+            elif sec_choice == "OP4_4":
+                dll.delete_from_front()
+                dll.dll_display()
+                dll.nodes_sum()
+
+            elif sec_choice == "OP5_5":
+                break
+
+            else:
+                print("Invalid choice provided. Try again!")
+
+    elif choice == "OP8":
+        break
+
+    else:
+        print("Invalid choice provided. Try again!")
+
+

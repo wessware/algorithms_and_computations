@@ -202,3 +202,8 @@ while True:
                 dll.dll_display()
                 dll.nodes_sum()
 
+            elif sec_choice == "OP3_3":
+                dll.delete_at_end()
+                dll.dll_display()
+                dll.nodes_sum()
+

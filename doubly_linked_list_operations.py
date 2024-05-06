@@ -153,3 +153,29 @@ while True:
         dll.insert_at_front(employee)
         dll.dll_display()
         dll.nodes_sum()
+
+    elif choice == "OP5":
+        dll.delete_at_end()
+        dll.dll_display()
+        dll.nodes_sum()
+
+    elif choice == "OP6":
+        dll.delete_from_front()
+        dll.dll_display()
+        dll.nodes_sum()
+
+    elif choice == "OP7":
+        while True:
+            print("------Implementation as Double-Ended Queue")
+            print("OP1_1: Insertion at end operation")
+            print("OP2_2: Insert at front operation")
+            print("OP3_3: Deletion at end operation")
+            print("OP4_4: Deletion at front operation")
+            print("OP5_5: Return to main application")
+            print("--------END----------")
+
+            sec_choice = input("Select a DE-Queue operation: ")
+
+            if sec_choice == "OP1_1":
+                ssn = 
+

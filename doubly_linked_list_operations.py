@@ -177,5 +177,28 @@ while True:
             sec_choice = input("Select a DE-Queue operation: ")
 
             if sec_choice == "OP1_1":
-                ssn = 
+                ssn = input("Enter employee ssn: ")
+                name = input("Emplyee name: ")
+                dept = input("Employee department: ")
+                sal = float(input("Employee salary: "))
+                designation = input("Employee designation: ")
+                phno = input("Employee phone number: ")
+
+                employee = Employee(ssn, name, dept, designation, sal, phno)
+                dll.insert_at_end(employee)
+                dll.dll_display()
+                dll.nodes_sum()
+
+            elif sec_choice == "OP2_2":
+                ssn = input("Employee SSN: ")
+                name = input("Employee name: ")
+                dept = input("Employee department: ")
+                designation = input("Employee designation: ")
+                sal = float(input("Employee salary: "))
+                phno = input("Employee phone number: ")
+
+                employee = Employee(ssn, name, dept, designation, sal, phno)
+                dll.insert_at_front(employee)
+                dll.dll_display()
+                dll.nodes_sum()
 

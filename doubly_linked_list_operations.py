@@ -212,4 +212,16 @@ while True:
                 dll.dll_display()
                 dll.nodes_sum()
 
+            elif sec_choice == "OP5_5":
+                break
+
+            else:
+                print("Invalid choice provided. Try again!")
+
+    elif choice == "OP8":
+        break
+
+    else:
+        print("Invalid choice provided. Try again!")
+
 

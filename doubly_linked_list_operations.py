@@ -207,3 +207,9 @@ while True:
                 dll.dll_display()
                 dll.nodes_sum()
 
+            elif sec_choice == "OP4_4":
+                dll.delete_from_front()
+                dll.dll_display()
+                dll.nodes_sum()
+
+

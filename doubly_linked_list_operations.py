@@ -1,5 +1,18 @@
 class Employee:
+    """
+        Initialize a new instance of the Employee class.
 
+        Args:
+            ssn (str): The social security number of the employee.
+            name (str): The name of the employee.
+            dept (str): The department of the employee.
+            designation (str): The designation of the employee.
+            sal (float): The salary of the employee.
+            phno (str): The phone number of the employee.
+
+        Returns:
+            None
+    """
     def __init__(self, ssn, name, dept, designation, sal, phno):
         self.ssn = ssn
         self.name = name
@@ -23,6 +36,9 @@ class DoublyLinkedList:
         self.count = 0
 
     def insert_at_end(self, employee):
+        """
+    
+        """
         new_node = Node(employee)
         if self.head is None:
             self.head = new_node

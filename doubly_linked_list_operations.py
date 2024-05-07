@@ -1,6 +1,34 @@
 class Employee:
+    """
+        Initialize a new instance of the Employee class.
 
+        Args:
+            ssn (str): The social security number of the employee.
+            name (str): The name of the employee.
+            dept (str): The department of the employee.
+            designation (str): The designation of the employee.
+            sal (float): The salary of the employee.
+            phno (str): The phone number of the employee.
+
+        Returns:
+            None
+    """
     def __init__(self, ssn, name, dept, designation, sal, phno):
+
+        """
+            Initialize a new instance of the Employee class.
+
+            Args:
+                ssn (str): The social security number of the employee.
+                name (str): The name of the employee.
+                dept (str): The department of the employee.
+                designation (str): The designation of the employee.
+                sal (float): The salary of the employee.
+                phno (str): The phone number of the employee.
+
+            Returns:
+                None
+        """
         self.ssn = ssn
         self.name = name
         self.dept = dept
@@ -9,6 +37,7 @@ class Employee:
         self.phno = phno
 
 class Node:
+
     
     def __init__(self, employee):
         self.employee = employee
@@ -16,6 +45,17 @@ class Node:
         self.prev = None
 
 class DoublyLinkedList:
+    """
+    Initializes a new instance of the class.
+
+    This method sets the initial values for the `head`, `tail`, and `count` attributes of the class.
+
+    Parameters:
+        None
+
+    Returns:
+        None
+    """
 
     def __init__(self):
         self.head = None
@@ -23,6 +63,9 @@ class DoublyLinkedList:
         self.count = 0
 
     def insert_at_end(self, employee):
+        """
+    
+        """
         new_node = Node(employee)
         if self.head is None:
             self.head = new_node
@@ -48,6 +91,18 @@ class DoublyLinkedList:
         print("Employee info inserted at the front!")
     
     def delete_at_end(self):
+
+        """
+        Deletes the last node in the doubly linked list.
+
+        This method checks if the doubly linked list is empty. If it is, it prints a message indicating that there are no employee info to delete. If the list has only one node, it sets the head and tail to None and decrements the count. If the list has more than one node, it sets the tail to the previous node, sets the next pointer of the previous node to None, decrements the count, and prints a message indicating that the employee info has been deleted from the end.
+
+        Parameters:
+        - None
+
+        Returns:
+        - None
+        """
         if self.head is None:
             print("Doubly linked list has employee info to delete!")
         elif self.head == self.tail:
@@ -62,6 +117,12 @@ class DoublyLinkedList:
             print("Employee info deleted from the end!")
 
     def delete_from_front(self):
+
+        """
+        Deletes the first node in the doubly linked list.
+
+        This method checks if the doubly linked list is empty. If it is, it prints a message indicating that there are no employee info to delete. If the list has only one node, it sets the head and tail to None and decrements the count. If the list has more than one node, it updates the head to the next node, resets the previous pointer of the new head to None, decrements the count, and prints a message indicating that the employee info has been deleted from the front.
+        """
         if self.head is None:
             print("Doubly Linked list has no employee data!")
         elif self.head == self.tail:

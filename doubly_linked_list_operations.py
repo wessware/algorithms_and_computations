@@ -91,6 +91,18 @@ class DoublyLinkedList:
         print("Employee info inserted at the front!")
     
     def delete_at_end(self):
+
+        """
+        Deletes the last node in the doubly linked list.
+
+        This method checks if the doubly linked list is empty. If it is, it prints a message indicating that there are no employee info to delete. If the list has only one node, it sets the head and tail to None and decrements the count. If the list has more than one node, it sets the tail to the previous node, sets the next pointer of the previous node to None, decrements the count, and prints a message indicating that the employee info has been deleted from the end.
+
+        Parameters:
+        - None
+
+        Returns:
+        - None
+        """
         if self.head is None:
             print("Doubly linked list has employee info to delete!")
         elif self.head == self.tail:
@@ -105,6 +117,12 @@ class DoublyLinkedList:
             print("Employee info deleted from the end!")
 
     def delete_from_front(self):
+
+        """
+        Deletes the first node in the doubly linked list.
+
+        This method checks if the doubly linked list is empty. If it is, it prints a message indicating that there are no employee info to delete. If the list has only one node, it sets the head and tail to None and decrements the count. If the list has more than one node, it updates the head to the next node, resets the previous pointer of the new head to None, decrements the count, and prints a message indicating that the employee info has been deleted from the front.
+        """
         if self.head is None:
             print("Doubly Linked list has no employee data!")
         elif self.head == self.tail:

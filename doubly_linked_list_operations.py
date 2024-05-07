@@ -14,6 +14,21 @@ class Employee:
             None
     """
     def __init__(self, ssn, name, dept, designation, sal, phno):
+
+        """
+            Initialize a new instance of the Employee class.
+
+            Args:
+                ssn (str): The social security number of the employee.
+                name (str): The name of the employee.
+                dept (str): The department of the employee.
+                designation (str): The designation of the employee.
+                sal (float): The salary of the employee.
+                phno (str): The phone number of the employee.
+
+            Returns:
+                None
+        """
         self.ssn = ssn
         self.name = name
         self.dept = dept
@@ -22,6 +37,7 @@ class Employee:
         self.phno = phno
 
 class Node:
+
     
     def __init__(self, employee):
         self.employee = employee
@@ -29,6 +45,17 @@ class Node:
         self.prev = None
 
 class DoublyLinkedList:
+    """
+    Initializes a new instance of the class.
+
+    This method sets the initial values for the `head`, `tail`, and `count` attributes of the class.
+
+    Parameters:
+        None
+
+    Returns:
+        None
+    """
 
     def __init__(self):
         self.head = None

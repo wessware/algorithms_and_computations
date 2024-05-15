@@ -29,3 +29,6 @@ strings = ["wechale", "Rahab", "Esther", "Stephen", "Injendi", "Zakayo", "Mwalat
 sorted_strings = sort_string(strings)
 
 print(sorted_strings)
+
+reversed_strings = "".join(reversed(strings))
+print(reversed_strings)
